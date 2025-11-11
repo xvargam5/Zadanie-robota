@@ -1,6 +1,14 @@
 @LibraryApi_HostAddress = http://localhost:5149
 
-GET {{LibraryApi_HostAddress}}/weatherforecast/
-Accept: application/json
+### Create a new book
+POST {{LibraryApi_HostAddress}}/api/books
+Content-Type: application/json
+
+{
+  "title": "Nová Kniha z .http súboru",
+  "author": "Testovací Autor",
+  "isbn": "111-222-333",
+  "publicationDate": "2025-01-01T10:00:00Z"
+}
 
 ###
