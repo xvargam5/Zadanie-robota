@@ -2,7 +2,6 @@ using LibraryApi.Data;
 using LibraryApi.Models;
 using Microsoft.AspNetCore.JsonPatch;
 using Microsoft.AspNetCore.Mvc;
-using Microsoft.EntityFrameworkCore;
 
 namespace LibraryApi.Controllers;
 

@@ -1,4 +1,5 @@
 using LibraryApi.Data;
+using LibraryApi.Services;
 using Microsoft.EntityFrameworkCore;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -15,6 +16,9 @@ builder.Services.AddSwaggerGen();
 // Add services for Controllers
 builder.Services.AddControllers()
     .AddNewtonsoftJson();
+
+// Custom background service
+builder.Services.AddHostedService<ReminderService>();
 
 var app = builder.Build();
 
